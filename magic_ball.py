@@ -12,3 +12,17 @@ print('Как тебя зовут?')
 userName = input('>')
 
 print(f'Привет {userName}!')
+
+while True:
+    print('Жду твой вопрос)\n')
+    input('>')
+    print()
+    print(f'>{choice(answer)}')
+    print('Хочешь продолжить? Введи - да, или что-то другое, чтобы закрыть')
+    if input('>').lower() == 'да':
+        print('Ура! Вперед!!!')
+        continue
+    else:
+        break
+
+print('Возвращайся если возникнут вопросы!')
